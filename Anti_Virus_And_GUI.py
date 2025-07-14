@@ -198,14 +198,14 @@ submit_folder = {'SUBMIT': (670, 550, 25, 3, 12, "green", result_of_scanning_fol
 # Creating default_frame - home screen: appears every time you open the interface (default)
 default_frame = Frame(gui, width = 1600, height = 900)
 default_frame.place(x = 0, y = 0, relwidth = 1, relheight = 1)
-animate_gif_background(default_frame, "D://NOY//אקדמיית המתכנתים//default_frame.gif")
+animate_gif_background(default_frame, "H://NOY//אקדמיית המתכנתים//default_frame.gif")
 buttons(buttons_commands, default_frame)
 buttons(exit, default_frame)
 
 
 # Creating file_frame - frame where the user inserts the file they want to scan
 file_frame = tk.Frame(gui, width = 1600, height = 900)
-adding_image("D://NOY//אקדמיית המתכנתים//empty_frame.png", file_frame)
+adding_image("H://NOY//אקדמיית המתכנתים//empty_frame.png", file_frame)
 file_frame.place(x = 0, y = 0, relwidth = 1, relheight = 1)
 # Creates a label that tells the user what to do
 file_path_label = Label(file_frame, text = 'Enter file path', font = ('calibre',32, 'bold'))
@@ -221,7 +221,7 @@ buttons(select_file, file_frame)
 
 # Creating folder_frame - frame where the user inserts the folder they want to scan
 folder_frame = Frame(gui, width = 1600, height = 900)
-adding_image("D://NOY//אקדמיית המתכנתים//empty_frame.png", folder_frame)
+adding_image("H://NOY//אקדמיית המתכנתים//empty_frame.png", folder_frame)
 folder_frame.place(x = 0, y = 0, relwidth = 1, relheight = 1)
 # Creates a label that tells the user what to do
 folder_path_label = Label(folder_frame, text = 'Enter folder path', font = ('calibre',32, 'bold'))
@@ -237,7 +237,7 @@ buttons(select_folder, folder_frame)
 
 # Creating help_frame - explains the buttons on the home screen (default_frame)
 help_frame = Frame(gui, width = 1600, height = 900)
-adding_image("D://NOY//אקדמיית המתכנתים//help_frame.png", help_frame)
+adding_image("H://NOY//אקדמיית המתכנתים//help_frame.png", help_frame)
 help_frame.place(x = 0, y = 0, relwidth = 1, relheight = 1)
 buttons(back_default, help_frame)
 buttons(exit, help_frame)
@@ -245,17 +245,17 @@ buttons(exit, help_frame)
 
 # Creating loading_frame - displayed while the program is running and scanning the file
 loading_frame = Frame(gui, width = 1600, height = 900)
-adding_image("D://NOY//אקדמיית המתכנתים//loading_frame.png", loading_frame)
+adding_image("H://NOY//אקדמיית המתכנתים//loading_frame.png", loading_frame)
 loading_frame.place(x = 0, y = 0, relwidth = 1, relheight = 1)
 buttons(exit, loading_frame)
 
 
 # Creating result_frame - displays the results of scanning the file or folder
 result_frame = Frame(gui, width = 1600, height = 900)
-adding_image("D://NOY//אקדמיית המתכנתים//empty_frame.png", result_frame)
+adding_image("H://NOY//אקדמיית המתכנתים//empty_frame.png", result_frame)
 result_frame.place(x = 0, y = 0, relwidth = 1, relheight = 1)
 # Creating a text box that will contain the scan result(s)
-result_box = Text(result_frame, bg = "black",fg = "white",font = ('calibre',20,'normal'), width = 120, height = 10)
+result_box = Text(result_frame, bg = "black",fg = "white",font = ('calibre',20,'normal'), width = 100, height = 10)
 result_box.place(relx = 0.5, rely = 0.5, anchor = tk.CENTER)
 buttons(exit, result_frame)
 
